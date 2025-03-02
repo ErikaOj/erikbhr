@@ -53,6 +53,8 @@ public class Main {
             frame.repaint();
         });
 
+        //
+
         // Make the frame visible
         frame.setVisible(true);
     }
