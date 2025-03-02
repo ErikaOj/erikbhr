@@ -1,11 +1,13 @@
 import javax.swing.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
         // Create and configure the main frame
-        JFrame frame = new JFrame("فرم نظرسنجی");
+        JFrame frame = new JFrame("Survey Form");
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -13,15 +15,22 @@ public class Main {
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
+
+        //font
+        Font font = new Font("Arial",Font.BOLD, 16);
 
         // Create title label
-        JLabel title = new JLabel("فرم نظرسنجی");
+        JLabel title = new JLabel("Survey Form");
+        title.setFont(font);
         title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(JLabel.CENTER);
+        panel.add(title, BorderLayout.NORTH);
 
         // Create start button
-        JButton startButton = new JButton("شروع!");
+        JButton startButton = new JButton("Start!");
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
@@ -46,6 +55,8 @@ public class Main {
             frame.revalidate();
             frame.repaint();
         });
+
+        //
 
         // Make the frame visible
         frame.setVisible(true);
