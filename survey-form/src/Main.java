@@ -12,7 +12,7 @@ public class Main {
         frame.setLayout(null);
 
         // Create and configure the main panel
-        JPanel panel = new JPanel(); 
+        JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
 
