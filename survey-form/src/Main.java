@@ -1,6 +1,8 @@
 import javax.swing.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,8 +18,12 @@ public class Main {
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
 
+        //font
+        Font font = new Font("Arial",Font.BOLD, 16);
+
         // Create title label
         JLabel title = new JLabel("Survey Form");
+        title.setFont(font);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button

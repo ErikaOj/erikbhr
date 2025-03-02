@@ -1,10 +1,12 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
     public void create(JFrame frame) {
+        
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
@@ -12,24 +14,28 @@ public class informationPage {
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
+        nameLabel.setFont(font);
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(50, 10, 100, 20);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
+        ageLabel.setFont(font);
         ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
         ageField.setBounds(50, 50, 100, 20);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");
+        emailLabel.setFont(font);
         emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
         emailField.setBounds(50, 90, 100, 20);
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
+        levelLabel.setFont(font);
         levelLabel.setBounds(10, 130, 250, 20);
 
         JRadioButton level1 = new JRadioButton("Basic");
