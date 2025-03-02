@@ -10,7 +10,8 @@ public class informationPage {
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.YELLOW);
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
@@ -18,6 +19,7 @@ public class informationPage {
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(50, 10, 100, 20);
+        //panel.add(Box.createRigidArea(new Dimension(int width,int )));
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
