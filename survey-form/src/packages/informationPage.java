@@ -19,7 +19,7 @@ public class informationPage {
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(50, 10, 100, 20);
-        //panel.add(Box.createRigidArea(new Dimension(int width,int )));
+        panel.add(Box.createRigidArea(new Dimension(int 50,int 50)));
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
@@ -27,6 +27,7 @@ public class informationPage {
         ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
         ageField.setBounds(50, 50, 100, 20);
+
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");

@@ -85,6 +85,7 @@ public class questionsPage {
         JLabel question4 = new JLabel("Are colors and fonts are suitable for the software");
         question4.setFont(font);
         question4.setBounds(10, 250, 350, 20);
+        panel.add(Box.createRigidArea(new Dimension(int 50,int 50)));
 
         JRadioButton radio4_1 = new JRadioButton("1");
         radio4_1.setBounds(10, 280, 100, 20);
